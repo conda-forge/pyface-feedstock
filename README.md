@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyface-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pyface-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyface-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyface-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyface-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyface-feedstock/branch/master)
