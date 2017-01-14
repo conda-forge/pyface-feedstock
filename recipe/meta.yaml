@@ -10,7 +10,7 @@ source:
   md5: b858301ef92269c3e4de82d90cba3020
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - traits
-    - pyqt
+    - pyqt 4.11.*
     - pygments
 
 test:
