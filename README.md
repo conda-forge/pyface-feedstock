@@ -11,6 +11,18 @@ Summary: pyface - traits-capable windowing framework
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyface-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyface-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyface-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyface-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyface-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyface-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyface/badges/version.svg)](https://anaconda.org/conda-forge/pyface)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyface/badges/downloads.svg)](https://anaconda.org/conda-forge/pyface)
+
 Installing pyface
 =================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pyface` available on your platfor
 ```
 conda search pyface --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyface-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyface-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyface-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyface-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyface-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyface-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyface/badges/version.svg)](https://anaconda.org/conda-forge/pyface)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyface/badges/downloads.svg)](https://anaconda.org/conda-forge/pyface)
 
 
 Updating pyface-feedstock
