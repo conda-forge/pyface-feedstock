@@ -17,13 +17,13 @@ requirements:
   build:
     - python
     - setuptools
-    - pyqt 4.11.*  # pyface requires pyqt, pyside or wxpython
+    - pyqt  # pyface requires pyqt 4 or 5, pyside or wxpython 3
     - traits
     - pygments
   run:
     - python
     - traits
-    - pyqt 4.11.*
+    - pyqt
     - pygments
 
 test:
