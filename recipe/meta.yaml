@@ -1,4 +1,4 @@
-{% set version = "5.1.0" %}
+{% set version = "6.0.0" %}
 
 package:
   name: pyface
@@ -6,24 +6,24 @@ package:
 
 source:
   fn: pyface-{{ version }}.tar.bz2
-  url: https://pypi.io/packages/source/p/pyface/pyface-{{ version }}.tar.bz2
-  md5: b858301ef92269c3e4de82d90cba3020
+  url: https://pypi.io/packages/source/p/pyface/pyface-{{ version }}.tar.gz
+  sha256: bf0552597a587452fcfa212f956c3a59931ba301cca6eeb144227466da456276
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - python
     - setuptools
-    - pyqt 4.11.*  # pyface requires pyqt, pyside or wxpython
+    - pyqt  # pyface requires pyqt 4 or 5, pyside or wxpython 3
     - traits
     - pygments
   run:
     - python
     - traits
-    - pyqt 4.11.*
+    - pyqt
     - pygments
 
 test:
