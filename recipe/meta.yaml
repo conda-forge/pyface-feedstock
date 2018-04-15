@@ -13,11 +13,11 @@ build:
   number: 1
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
+
 requirements:
   build:
     - pip
     - python
-    - setuptools
     - pyqt  # pyface requires pyqt 4 or 5, pyside or wxpython 3
     - traits
     - pygments
