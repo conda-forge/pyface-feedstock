@@ -18,13 +18,10 @@ requirements:
   build:
     - pip
     - python
-    - pyqt  # pyface requires pyqt 4 or 5, pyside or wxpython 3
-    - traits
-    - pygments
   run:
     - python
     - traits
-    - pyqt
+    - pyqt  # pyface requires pyqt 4 or 5, pyside or wxpython 3
     - pygments
 
 test:
