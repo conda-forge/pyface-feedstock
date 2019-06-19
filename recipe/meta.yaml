@@ -1,4 +1,4 @@
-{% set version = "6.1.0" %}
+{% set version = "6.1.1" %}
 
 package:
   name: pyface
@@ -7,10 +7,10 @@ package:
 source:
   fn: pyface-{{ version }}.tar.bz2
   url: https://pypi.io/packages/source/p/pyface/pyface-{{ version }}.tar.gz
-  sha256: bcdf3628bbfa1fdd218d7b488326473f3b08cdaf9cadcd3fb430f2ecd75ebec3
+  sha256: a7e6d58e441b70748baa96ed3c921835b10a14a1c5857109b9de37062b8cb9e0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
