@@ -1,4 +1,4 @@
-{% set version = "6.1.2" %}
+{% set version = "7.0.0" %}
 
 package:
   name: pyface
@@ -7,12 +7,12 @@ package:
 source:
   fn: pyface-{{ version }}.tar.bz2
   url: https://pypi.io/packages/source/p/pyface/pyface-{{ version }}.tar.gz
-  sha256: 7c2ac3d5cbec85e8504b3b0b63e9307be12c6d710b46bae372ce6562d41f4fbc
+  sha256: 9e00aba15de9c0e553dfcc7b346c3541c54f35054dd05b72a9e2343e340adf6f
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -31,6 +31,7 @@ test:
 about:
   home: http://docs.enthought.com/pyface/
   license: BSD 3-clause
+  license_file: LICENSE.txt
   summary: pyface - traits-capable windowing framework
 
 extra:
