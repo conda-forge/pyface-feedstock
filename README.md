@@ -5,7 +5,7 @@ Home: http://docs.enthought.com/pyface/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: pyface - traits-capable windowing framework
 
