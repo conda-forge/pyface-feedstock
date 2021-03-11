@@ -10,7 +10,7 @@ source:
   sha256: a7031ec4cfff034affc822e47ff5e6c1a0272e576d79465cdbbe25f721740322
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -23,6 +23,8 @@ requirements:
     - traits
     - pyqt  # pyface requires pyqt 4 or 5, pyside or wxpython 3
     - pygments
+    - importlib_resources
+    - importlib_metadata
 
 test:
   imports:
