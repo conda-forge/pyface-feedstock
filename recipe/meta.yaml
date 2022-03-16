@@ -1,4 +1,4 @@
-{% set version = "7.3.0" %}
+{% set version = "7.4.1" %}
 
 package:
   name: pyface
@@ -7,19 +7,19 @@ package:
 source:
   fn: pyface-{{ version }}.tar.bz2
   url: https://pypi.io/packages/source/p/pyface/pyface-{{ version }}.tar.gz
-  sha256: a7031ec4cfff034affc822e47ff5e6c1a0272e576d79465cdbbe25f721740322
+  sha256: 52dcf3679ca3e610a3ca7c4b9904a96c691688048db5d7e52af8e5019e47adb6
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
     - traits
     - pyqt  # pyface requires pyqt 4 or 5, pyside or wxpython 3
     - pygments
@@ -39,3 +39,4 @@ about:
 extra:
   recipe-maintainers:
     - grlee77
+    - larsoner
