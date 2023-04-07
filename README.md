@@ -1,11 +1,11 @@
-About pyface
-============
+About pyface-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyface-feedstock/blob/main/LICENSE.txt)
 
 Home: http://docs.enthought.com/pyface/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyface-feedstock/blob/main/LICENSE.txt)
 
 Summary: pyface - traits-capable windowing framework
 
