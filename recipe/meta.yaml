@@ -6,30 +6,32 @@ package:
 
 source:
   fn: pyface-{{ version }}.tar.bz2
-  url: https://pypi.io/packages/source/p/pyface/pyface-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pyface/pyface-{{ version }}.tar.gz
   sha256: 7e13618347b7a648ed20cdbd4fd1a51648f5010291f35e4e0ff1bf70a720cbf8
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - setuptools
+    - python {{ python_min }}
   run:
     # pyface requires pyqt, pyside or wxpython 3, so don't explicitly require
     # any of them here (allow the user to choose)
-    - python >=3.6
+    - python >={{ python_min }}
     - traits
     - pygments
     - importlib_resources
-    - importlib_metadata
+    - importlib-metadata
 
 test:
   requires:
     - pyside6
+    - python {{ python_min }}
   imports:
     - pyface
 
